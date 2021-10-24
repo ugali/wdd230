@@ -3,8 +3,8 @@
     --clr-primary-400: red;
     --clr-neutral-100: #fff;
     --clr-neutral-900: #000000;
-    --ff-primary: 'Roboto', sans-serif;
-    --ff-accent: 'Playfair Display', serif;
+    --ff-primary: 'Roboto', 'sans-serif';
+    --ff-accent: 'Playfair Display', 'serif';
     --hear-text-color: #ffffff;
     --backg-color: #17476b;
     --contrast-color: rgb(233, 245, 9);
