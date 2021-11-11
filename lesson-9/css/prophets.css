@@ -7,40 +7,44 @@
 
 body {
 	/* background: linear-gradient(#6f95e8, #75c4f0); */
-	 padding: 20px;
+    font-family: "Open Sans","Zoram","noto sans",Helvetica,Arial,sansSerif;
+	padding: 20px;
 }
 
+.page {
+    width: 90%;
+    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    margin: 0 auto;
+}
 h1 {
-    text-align: center;
-    margin-bottom: 2.5rem;
-    font-size: 3rem;
+	text-align: center;
+	margin-bottom: 2.5rem;
+	font-size: 3rem;
 }
 .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    row-gap: 30px;
+	row-gap: 30px;
 }
 
 .card {
 	box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.8);
 	transition: 0.3s;
 	width: 80%;
-    text-align: center;
-    padding: 0.5rem;
-    background-color: cornsilk;
-    justify-self: center;
-    color: #212225;
-    
-} 
-
+	text-align: center;
+	padding: 0.5rem;
+	background-color: cornsilk;
+	justify-self: center;
+	color: #212225;
+}
 
 .card:hover {
 	box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.9);
 }
 
-
 img {
-    width: 100%;
+	width: 100%;
 }
 
 footer {
