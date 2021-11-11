@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* background: linear-gradient(#6f95e8, #75c4f0); */
+	/* padding: 20px; */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+}
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    row-gap: 30px;
+}
+
+.card {
+	box-shadow: 0px 2px 9px 0 rgba(0, 0, 0, 0.8);
+	transition: 0.3s;
+	width: 80%;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: cornsilk;
+    justify-self: center;
+    color: #212225;
+    
+} 
+
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+}
+
+
+img {
+    width: 100%;
+}
+
+footer {
+	text-align: center;
+	margin-top: 2rem;
+}
