@@ -1,0 +1,153 @@
+@media only screen and (min-width: 35em) {
+	:root {
+		--primary-color: #000;
+		--secondary-color: #111;
+		--bg-color-white: #fff;
+		--bg-color-gray: #3a3d40;
+		--bg-color-gray-white: #f1f1f3;
+		--bg-color-orange: #f4511e;
+		--bg-color-palegreen: #4caf50;
+		--font-color1: #fff;
+		--font-color-paleorange: #eba51b;
+		--header-color: #3e3e3e;
+		--nav-hover-color: rgba(0, 0, 0, 30%);
+	}
+	
+	*,
+	*::after,
+	*::before {
+		margin: 0;
+		padding: 0;
+	}
+
+	nav ul {
+		display: flex;
+		max-width: 37em;
+		margin: 0 auto;
+	}
+	nav ul li {
+		display: block;
+		flex: 1 1 auto;
+	}
+	nav ul li:first-child {
+		display: none;
+	}
+	nav ul li a {
+		font-size: 0.8rem;
+	}
+
+	main {
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 37em;
+		margin: 0 auto;
+	}
+	h1 {
+		font-size: 1.9rem;
+	}
+	h2 {
+		font-size: 1.6rem;
+	}
+	header img {
+		width: 120px;
+	}
+	.h3 {
+		display: block;
+		text-align: center;
+		margin: 15px 10px 5px 10px;
+	}
+
+	.wsummary {
+		position: absolute;
+		margin: 0px;
+		top: 10px;
+		left: 10px;
+		background-color: rgba(245, 134, 52, 75%);
+		box-shadow: 0px 0px 5px 2px #444;
+	}
+
+	.wsummary section h4 {
+		margin: 0;
+		padding-bottom: 0.5rem;
+		color: #444;
+	}
+	.wsummary section p {
+		font-size: 0.9rem;
+		margin: 0;
+	}
+
+	.forecast {
+		display: flex;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	.forecast section {
+		text-align: center;
+		border: 1px solid #f58634;
+		flex: 1 1 auto;
+		margin: 0 2px;
+	}
+	.forecast section h5 {
+		margin: 0;
+		padding: 10px;
+		background-color: #f58634;
+	}
+	.forecast section img {
+		margin: 0;
+		padding: 5px;
+		width: 60%;
+	}
+	.forecast section p {
+		margin: 0;
+		font-size: 0.8rem;
+		font-weight: bold;
+		padding: 0 3px;
+	}
+	.forecast section p:last-child {
+		margin-bottom: 10px;
+	}
+
+	.article {
+		border: 1px solid #f58634;
+	}
+
+	.article section img {
+		float: right;
+		max-width: 55%;
+		margin-top: 5px;
+		margin-left: 15px;
+		margin-bottom: 15px;
+	}
+	.article section h4 {
+		font-size: 1.3rem;
+		margin: 0px 0px 10px 0px;
+	}
+
+	.article section p {
+		font-size: 1.05rem;
+	}
+
+	.contact {
+		max-width: 40em;
+		margin: 0 auto;
+		padding: 20px 20px;
+		display: grid;
+		grid-template-columns: 65% 35%;
+		text-align: left;
+	}
+	.map {
+		margin: 0px;
+		padding: 12px 0px;
+		max-width: 280px;
+		grid-column: 1 / 2;
+		grid-row: 1/2;
+	}
+	.contact-information {
+		padding: 0px;
+		grid-row: 1/2;
+		grid-column: 2 / 3;
+	}
+	.sat-banner p {
+		display: inline;
+	}
+}

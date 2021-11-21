@@ -1,64 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preston</title>
-    <link rel="stylesheet" href="small.css">
-    <link rel="stylesheet" href="large.css">
-</head>
-<body>
-    <body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Preston Town</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/large.css" />
+		<link rel="stylesheet" href="css/small.css" />
+
+	</head>
+	<body>
 		<header>
-			<img src="image/weather-logo.JPG" alt="dailywind logo" />
-			<h1>Daily Wind</h1>
+			<img src="images/weather-logo.JPG" alt="dailywind logo" />
+			<h1 style="color: #000">Daily Wind</h1>
 		</header>
 		<nav>
-			<ul>
-				<li><a href="index.html" class="active">&#8962; Home</a></li>
-				<li><a href="target-audience.html">&#92625; Audience</a></li>
-				<li><a href="typography.html">&#128292;Typography</a></li>
-				<li><a href="color-scheme.html">&#128396;Color Scheme</a></li>
+			<ul class="nonResponsive">
+				<li><a class="menu" href="#" onclick="openClose()"><span class="open">&#x2630;</span></a></li>
+				<li><a href="#" >Home</a></li>
+				<li><a href="preston-5.html" class="active">Preston</a></li>
+				<li><a href="#">Soda Springs</a></li>
+				<li><a href="#">Fish Haven</a></li>
+				<li><a href="#">Storm Center</a></li>
+				<li><a href="#">Gallery</a></li>
 			</ul>
 		</nav>
 		<main>
-			<article>
-				<h2>Website planning</h2>
-				<h3>Site Name</h3>
-				<p>Daily Wind</p>
-				<h3>Domain</h3>
-				<p>www.dailywind.net</p>
-				<h3>Logo</h3>
-				<picture>
-					<img src="image/weather-logo.JPG" alt="dailywind logo" width="150"/>
-				</picture>
-				<h3>Purpose</h3>
-				<p>
-					Main purpose of this website is to inform local citigens about what
-					the weather will be like so that they can plan their activites and
-					travels accordingly. This site also give an oppertinity to discuss the
-					current events happening arround them. Qualtiy and accurate infomation
-					is very important to the safety of the commumunity.
-				</p>
-			</article>
-			<!-- <picture>
-				<img
-					src="https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-					alt="A placeholder image"
-					width="650"
-				/>
-			</picture> -->
+			<h2>Preston Idaho</h2>
+			<div class="ws-containner">
+				<img src="images/preston.jpg" alt="Preston Hero Image">
+				<div class="wsummary">
+					<section>
+						<h4>Weather Summary</h4>
+						<p>Current: <span>Cloudy</span></p>
+						<p>High: <span>76&deg; F</span></p>
+						<p>wind chill: <span>&deg; F</span></p>
+						<p>Humidity: <span>89 %</span></p>
+						<p>Wind speed: <span>12 mph.</span></p>
+					</section>
+				</div>
+			</div>
+			<h3 class="h3">5 Day forecast</h3>
+        <div class="forecast">
+            
+            <section>
+                <h5 id="h51"></h5>
+                <img src="images/rainny.png" alt="forecast image">
+                <p>76&deg; F</p>
+                <p>Humidity: 89%</p>
+            </section>
+            <section>
+                <h5 id="h52"></h5>
+                <img src="images/cloudy.png" alt="forecast image">
+                <p>79&deg; F</p>
+                <p>Humidity: 36%</p>
+            </section>
+            <section>
+                <h5 id="h53"></h5>
+                <img src="images/sunny.png" alt="forecast image">
+                <p>84&deg; F</p>
+                <p>Humidity: 23%</p>
+            </section>
+            <section>
+                <h5 id="h54"></h5>
+                <img src="images/sunny.png" alt="forecast image">
+                <p>85&deg; F</p>
+                <p>Humidity: 42%</p>
+            </section>
+            <section>
+                <h5 id="h55"></h5>
+                <img src="images/cloudy.png" alt="forecast image">
+                <p>89&deg; F</p>
+                <p>Humidity: 91%</p>
+            </section>
+        </div>
+
+		 <div class="article">
+            <section>
+                <img src="images/article_preston.jpg" alt="preston article image">
+                <h4>Devastating climate disasters of summer 2021</h4>
+                <p class="author-article">By Rachel Ramirez, CNN</p><br/>
+                <p>The climate crisis ravaged the United States this summer. As the West struggled with unrelenting drought and dozens of wildfires, a deadly heat wave seared the Northwest in June. Months later, back-to-back hurricanes - Henri and Ida - slammed the Northeast, breaking all-time rainfall records.<br/><br/>
+                   Beyond the US, China and Germany experienced deadly flooding events in July, as Canada and southern Europe battled pernicious wildfires of their own. Meanwhile, precipitation at the summit of Greenland fell as rain and not snow for the first time on record.<br/><br/>
+                   "It was impossible to ignore climate change this summer," Rachel Licker, a senior climate scientist with the Union of Concerned Scientists, told CNN. "And unfortunately, this isn't a one-time thing ... this is what we can expect more of, especially if we don't get off fossil fuels and invest in measures to build our resilience as soon as possible."<br/><br/>
+                   After months of deadly extremes, Americans' feelings on the climate crisis has evolved dramatically. For the first time, a majority of Americans now believe that the US is facing the consequences of a warming world, according to a new poll from the Yale Program on Climate Change Communication.<br/><br/>
+                </p>
+            </section>
+        </div>
 
 		</main>
 		<footer>
-			<p>
-				@2021 | Uday Kumar Gali | Dammam |
-				<a href="https://www.byui.edu/online">BYUI Online Learning</a>
-			</p>
+			<div class="contact-background">
+				<div class="contact">
+					<section class="contact-information">
+						<p class="contact-tilte">Contact information</p>
+						<p>&#10082; Preston, ID 83263</p>
+						<p>&#x260E; 909 909 909</p>
+						<p>&#x2709; info@rainingornot.com</p>
+						<a href="https://www.facebook.com/"><i class="fa fa-facebook fa-fw"></i></a>
+						<a href="https://twitter.com/"><i class="fa fa-twitter fa-fw"></i></a>
+						<a href="https://www.pinterest.com/"><i class="fa fa-google fa-fw">
+						</i></a>
+						<a href="https://www.youtube.com/"><i class="fa fa-youtube fa-fw">
+						</i></a>
+					</section>
+					<img class="map" src="images/preston-map.JPG" alt="location map">
+				</div>
+			</div>
+			<p>&copy; <span id="year"></span> 2021 | Uday Gali | BYUI Online</p>
+			<p id="currentDate"></p><br/>
 		</footer>
 	</body>
-</html>
-
-</body>
 </html>

@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&family=Tangerine:wght@700&display=swap');
+
+/* Global styles */
+:root {
+	--primary-color: #000;
+	--secondary-color: #111;
+	--bg-color-white: #fff;
+	--bg-color-gray: #3a3d40;
+	--bg-color-graywhite: #f1f1f3;
+	--bg-color-orange: #f4511e;
+	--bg-color-palegreen: #4caf50;
+	--font-color1: #fff;
+	--font-color-paleorange: #eba51b;
+	--header-color: #3e3e3e;
+	--nav-hover-color: rgba(0, 0, 0, 30%);
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	background-color: var(--bg-color-white);
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: var(--primary-color);
+}
+
+h1 {
+	font-family: 'Tangerine', cursive;
+	font-size: 3rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* .sb-container {
+	display: none;
+	background-color: #0098da;
+}
+.sat-banner {
+	margin: 0 auto;
+	padding: 10px 10px;
+	text-align: center;
+}
+.sat-banner p {
+	margin: 0;
+	font-size: 0.85rem;
+	color: #fff;
+} */
+
+/* Hearder Styles */
+
+header {
+	margin: 0 auto;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+header img {
+	padding: 10px 10px;
+	width: 6rem;
+}
+
+nav {
+	background-color: var(--bg-color-graywhite);
+	color:var(--primary-color);
+	text-align: center;
+}
+nav ul {
+	list-style-type: none;
+}
+/* nav ul li:first-child {
+	display: block;
+}
+nav ul li {
+	display: none;
+} */
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 0.75rem;
+	font-size: 0.95rem;
+}
+.active {
+	pointer-events: none;
+	background-color: var(--nav-hover-color);
+	color: var(--font-color2);
+}
+
+nav ul li a:hover {
+	background-color: var(--nav-hover-color);
+	color: var(--font-color1);
+}
+
+.responsive li {
+	display: block;
+}
+.menu {
+	color: #f58634;
+	background-color: #3e3e3e;
+}
+.menu:hover {
+	color: white;
+	background-color: #3e3e3e;
+}
+.open::after {
+	content: ' Menu';
+}
+.close::after {
+	content: ' Close';
+}
+
+/*main*/
+
+.content-box {
+	padding: 20px 20px;
+	border: 1px solid var(--font-color2);
+	margin-top: 10px;
+}
+.ws-containner {
+	position: relative;
+	margin-bottom: 20px;
+
+}
+
+.ws-containner img {
+	display: block;
+	margin: 0 auto;
+
+}
+.wsummary {
+	text-align: center;
+	margin: 12px 20px -20px 20px;
+	padding: 0;
+	background-color: var(--font-color-paleorange);
+}
+.wsummary section {
+	padding: 1rem;
+	color: white;
+	line-height: 90%;
+}
+.wsummary section h4 {
+	margin: 0;
+	padding-bottom: 0.5rem;
+	color: #444;
+}
+.wsummary section p {
+	font-size: 0.8rem;
+	margin: 0;
+}
+.wsummary section p span {
+	color: #444;
+}
+
+.h3 {
+	display: none;
+}
+.forecast {
+	/* display: none; */
+}
+
+.article {
+	margin: 20px 0px;
+}
+.article section {
+	padding: 20px;
+	text-align: center;
+}
+.article section img {
+	margin: 0 auto;
+	box-shadow: 0px 0px 3px 1px #444;
+}
+.article section h4 {
+	text-align: left;
+	margin: 10px 0px;
+}
+.article section p {
+	text-align: left;
+	font-size: 1rem;
+	margin: 5px 0px;
+}
+.author-article {
+	font-size: 1rem;
+	font-style: italic;
+}
+
+/*footer*/
+footer {
+	background-color: var(--bg-color-graywhite);
+	color:var(--primary-color);
+	text-align: center;
+	font-size: 0.9rem;
+}
+.contact-background {
+	background-color: rgba(0, 0, 0, 30%);
+}
+
+.contact-information {
+	padding: 10px 20px;
+	text-align: left;
+	line-height: 60%;
+}
+.contact-information p {
+	margin: 0;
+	font-size: 0.8rem;
+}
+.map {
+	margin: 0 auto;
+	margin-bottom: -5px;
+}
+.contact-information img {
+	max-width: 30px;
+	margin-right: 5px;
+	padding: 15px 0px;
+	filter: none;
+	-webkit-filter: grayscale(0%);
+}
+.contact-information img:hover {
+	filter: grayscale(50%);
+	-webkit-filter: grayscale(50%);
+}
+.contact-information p:first-child {
+	margin-bottom: 15px;
+	font-size: 1.1rem;
+	color: #f58634;
+}
+.contact-information a i {
+	padding: 10px;
+	background-color: var(--bg-color-white);
+	margin-top: 15px;
+}
+footer p {
+	padding-top: 15px;
+}
+#currentDate {
+	margin-top: -25px;
+}
