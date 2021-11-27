@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stormcenter</title>
+    <script src="https://kit.fontawesome.com/b7f4128615.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/small.css" />
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/large.css" />
+        
+</head>
+<body>
+    <body>
+        <header	 class="main-header">
+            <section class="header-image">
+                <img src="images/DailyWind-logo25.png" alt="dailywind logo" />	
+            </section>
+            <section class="header-burger" onclick="myFunction(this)"">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+            </section>
+        </header>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-5.html" class="active">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Storm Center</h2>
+            <div class="sc-container">
+                <form method="get" action="thanks.html" class="sc-form">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label class="top">Full Name* <input type="text" name="name" required pattern="[a-zA-Z'-'\s]{5,}"></label>
+                        <label class="top">Email <input type="email" name="email" placeholder="user@email.com"></label>
+                        <label class="top">Phone Number* <input type="tel" name="phone" required ></label>
+                        <label class="top">Zip Code* <input type="number" name="zipcode" required ></label>
+                    </fieldset>    
+                    <fieldset>
+                        <legend>Weather Event Information</legend>
+                        <label class="top">Storm Date<input type="date" name="date" ></label>
+                        <label class="top">Storm Type <input list="dataList" name="stormType" >
+                            <datalist id="dataList">
+                                <option value="Flash Flood">
+                                <option value="Hail">
+                                <option value="Hurricane">
+                                <option value="Thunderstorm">
+                                <option value="Tornado">
+                            </datalist>
+                        </label>
+                        <label class="top">Storm Severity: <span id="ratingvalue">5</span><input type="range" name="severity" value="5" min="1" max="10" 
+                            step="1" list="marks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            </label>
+                            <datalist id="marks">
+                                <option value="0">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                                <option value="6">
+                                <option value="7">
+                                <option value="8">
+                                <option value="9">
+                                <option value="10">
+                            </datalist>
+                        <label class="top">Storm Region
+                            <select name="subject">
+                                <option value="">Select Region</option>    
+                                <option value="sodaSprings">Soda Springs</option>
+                                <option value="sodaSprings">Soda Springs</option>
+                                <option value="fishHaven">Fish Haven</option>
+                            </select>
+                        </label>
+                        
+                        <div>User In-danger Level</div>
+                        <label class="rad"><input type="radio" name="userDL" value="yes"> Yes</label>
+                        <label class="rad"><input type="radio" name="userDL" value="maybe"> Maybe</label>
+                        <label class="rad"><input type="radio" name="userDL" value="no"> No</label>
+                        
+                        <label class="top">Additional Information <textarea name="addInfo"></textarea></label>
+                    </fieldset>
+                    <input type="submit" value="Report Weather Event" class="submitBtn"> 
+    
+                </form>
+            </div>         
+        </main>
+        <footer>
+            <article class="contact-container">
+                <section class=map-section>
+                    <img class="map" src="images/preston-map.JPG" alt="location map" />
+                </section>
+                <section class="contact-information">
+                        <h3 class="contact-tilte">Contact information:</h3>
+                        <p>&#10082; Preston, ID 83263</p>
+                        <p>&#x260E; 909 909 909</p>
+                        <p>&#x2709; info@rainingornot.com</p>
+                        <article class="social-media">
+                            <a href="https://www.facebook.com/"
+                                ><i class="fa fa-facebook fa-2x"></i
+                            ></a>
+                            <a href="https://twitter.com/"
+                                ><i class="fa fa-twitter fa-2x"></i
+                            ></a>
+                            <a href="https://www.pinterest.com/"
+                                ><i class="fa fa-google fa-2x"> </i
+                            ></a>
+                            <a href="https://www.youtube.com/"
+                                ><i class="fa fa-youtube fa-2x"> </i
+                            ></a>
+                        </article>
+                    </section>
+            </article>
+            <article class="copy-right">
+                <p>&copy; <span id="year"></span> 2021 | Uday Gali | BYUI Online</p>
+                <p id="currentDate"></p>
+            </article>
+        </footer>
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+                const navlist = document.querySelector('.main-nav');
+                console.log(navlist.classList);
+                navlist.classList.toggle('responsive');
+                }
+        </script>
+    </body>
+    </html>
