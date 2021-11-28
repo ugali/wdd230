@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/small.css" />
 		<link rel="stylesheet" href="css/medium.css" />
 		<link rel="stylesheet" href="css/large.css" />
+        <script src="js/script.js" defer ></script>
         
 </head>
 <body>
@@ -25,103 +26,63 @@
         </header>
         <nav>
             <ul class="main-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="preston-5.html" class="active">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="index.html"class="active">Home</a></li>
+                <li><a href="preston-10.html" >Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
-    <main>
-        <h2 id="main-heading">Preston Idaho</h2>
-        <section class="hero-image-container">
-            <img src="images/preston.jpg" alt="Preston Hero Image" />
-            <article class="weather-summery">
+        <main>
+             
+        
+            <article class="hero-container">
+                
+                <picture>
+                    <source media="(max-width: 34.99em)" srcset="images/reflection_640.jpg">
+                    <source media="(max-width: 55.99em)" srcset="images/reflection_1280.jpg">
+                    <source media="(min-width: 56em)" srcset="images/reflection_1920.jpg">
+                    <img src="images/reflection_large.jpg" alt="Preston Hero Image">
+                </picture>
+                <article class="hero-text">
+                    <section>
+                        <h4>Welcome to<br/>Daily wind!</h4>
+                        <p>hope you will have a great visit!</p>
+                    </section>
+                </article>
+            </article>
+            
+            <article class="cities-container">
+                
+            </article>  
+    
+            <hr class="home-hr">
+    
+            <article class="article" id="index-aticle">
                 <section>
-                    <h4>Weather Summary</h4>
-                    <p>Current: <span>Cloudy</span></p>
-                    <p>High: <span>76&deg; F</span></p>
-                    <p>wind chill: <span>&deg; F</span></p>
-                    <p>Humidity: <span>89 %</span></p>
-                    <p>Wind speed: <span>12 mph.</span></p>
+                    <h4>Reasons for a weather forecast</h4>
+                    <p class="author-article">By Meteorologist Jeff Haby.</p><br/>
+                    <p> There are several reasons why weather forecasts are important. They would certainly be missed if they were not there. It is a product of science that impacts the lives of many people. The following is a list of various reasons why weather forecasts are important:<br/><br/>
+                        1. Helps people prepare for how to dress (i.e. warm weather, cold weather, windy weather, rainy weather)<br/><br/>
+                        2. Helps businesses and people plan for power production and how much power to use (i.e. power companies, where to set thermostat)<br/><br/>
+                        3. Helps people prepare if they need to take extra gear to prepare for the weather (i.e. umbrella, rain coat, sun screen)<br/><br/>
+                        4. Helps people plan outdoor activities (i.e. to see if rain/storms/cold weather will impact outdoor event)<br/><br/>
+                        5. Helps curious people to know what sort of weather can be expected (i.e. a snow on the way, severe storms)<br/><br/>
+                        6. Helps businesses plan for transportation hazards that can result from the weather (i.e. fog, snow, ice, storms, clouds as it relates to driving and flying for example)<br/><br/>
+                        7. Helps people with health related issues to plan the day (i.e. allergies, asthma, heat stress)<br/><br/>
+                        8. Helps businesses and people plan for severe weather and other weather hazards (lightning, hail, tornadoes, hurricanes, ice storms)<br/><br/>
+                        9. Helps farmers and gardeners plan for crop irrigation and protection (irrigation scheduling, freeze protection)<br/><br/>
+                        10. Helps people involved with certain activities to know if conditions will be good (i.e. skiing, boating, ballooning)<br/><br/>
+                        11. Helps people know outside weather dangers (i.e. heat index, wind chill, severe weather)<br/><br/>
+                        12. Helps people plan for when to do certain activities that are influenced by weather (i.e. fertilizing, bug spraying, gardening)<br/><br/>
+                        13. Helps people know if they need to leave early for work<br/><br/>
+                        14. Make an uncertain future a little more certain (i.e. knowing changes that will occur in weather).<br/><br/>
+                    </p>
                 </section>
             </article>
-        </section>
-        <h3 class="week-forecast-heading">5 Day forecast</h3>
-        <article class="week-forecast">
-            <section>	
-                <div class="card-hearder"></div>
-                    <i class="fas fa-cloud-showers-heavy"></i>
-                <article class="card-text">
-                    <p>76&deg; F</p>
-                    <p>Humidity: 89%</p>
-                </article>
-            </section>
-            <section>
-                <div class="card-hearder"></div>
-                <i class="fas fa-cloud-sun"></i>
-                <article class="card-text">
-                    <p>79&deg; F</p>
-                    <p>Humidity: 36%</p>
-                </article>
-            </section>
-            <section>
-                <div class="card-hearder"></div>
-                <i class="fas fa-sun"></i>
-                <article class="card-text">
-                    <p>84&deg; F</p>
-                    <p>Humidity: 23%</p>
-                </article>
-            </section>
-            <section>
-                <div class="card-hearder"></div>
-                <i class="fas fa-sun"></i>
-                <article class="card-text">
-                <p>85&deg; F</p>
-                <p>Humidity: 42%</p>
-            </article>
-            </section>
-            <section>
-                <div class="card-hearder"></div>
-                <i class="fas fa-cloud-moon-rain"></i>
-                <article class="card-text">
-                    <p>89&deg; F</p>
-                    <p>Humidity: 91%</p>
-                </article>
-            </section>
-        </article>
-        <article class="article">
-            <section>
-                <img src="images/person-building.jpg" alt="preston article image" />
-                <h4>Devastating climate disasters of summer 2021</h4>
-                <p class="author-article">By Rachel Ramirez, CNN</p>
-                <br />
-                <p>
-                    The climate crisis ravaged the United States this summer. As the
-                    West struggled with unrelenting drought and dozens of wildfires, a
-                    deadly heat wave seared the Northwest in June. Months later,
-                    back-to-back hurricanes - Henri and Ida - slammed the Northeast,
-                    breaking all-time rainfall records.<br /><br />
-                    Beyond the US, China and Germany experienced deadly flooding events
-                    in July, as Canada and southern Europe battled pernicious wildfires
-                    of their own. Meanwhile, precipitation at the summit of Greenland
-                    fell as rain and not snow for the first time on record.<br /><br />
-                    "It was impossible to ignore climate change this summer," Rachel
-                    Licker, a senior climate scientist with the Union of Concerned
-                    Scientists, told CNN. "And unfortunately, this isn't a one-time
-                    thing ... this is what we can expect more of, especially if we don't
-                    get off fossil fuels and invest in measures to build our resilience
-                    as soon as possible."<br /><br />
-                    After months of deadly extremes, Americans' feelings on the climate
-                    crisis has evolved dramatically. For the first time, a majority of
-                    Americans now believe that the US is facing the consequences of a
-                    warming world, according to a new poll from the Yale Program on
-                    Climate Change Communication.<br /><br />
-                </p>
-            </section>
-        </article>
-    </main>
+    
+        </main>
     <footer>
         <article class="contact-container">
             <section class=map-section>

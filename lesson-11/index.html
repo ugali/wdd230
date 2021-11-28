@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily wind</title>
+    <script src="https://kit.fontawesome.com/b7f4128615.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/small.css" />
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/large.css" />
+        <script src="js/script.js" defer ></script>
+        
+</head>
+<body>
+    <body>
+        <header	 class="main-header">
+            <section class="header-image">
+                <img src="images/DailyWind-logo25.png" alt="dailywind logo" />	
+            </section>
+            <section class="header-burger" onclick="myFunction(this)"">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+            </section>
+        </header>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html"class="active">Home</a></li>
+                <li><a href="preston-11.html" >Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+             
+        
+            <article class="hero-container">
+                
+                <picture>
+                    <source media="(max-width: 34.99em)" srcset="images/reflection_640.jpg">
+                    <source media="(max-width: 55.99em)" srcset="images/reflection_1280.jpg">
+                    <source media="(min-width: 56em)" srcset="images/reflection_1920.jpg">
+                    <img src="images/reflection_large.jpg" alt="Preston Hero Image">
+                </picture>
+                <article class="hero-text">
+                    <section>
+                        <h4>Welcome to<br/>Daily wind!</h4>
+                        <p>hope you will have a great visit!</p>
+                    </section>
+                </article>
+            </article>
+            
+            <article class="cities-container">
+                
+            </article>  
+    
+            <hr class="home-hr">
+    
+            <article class="article" id="index-aticle">
+                <section>
+                    <h4>Reasons for a weather forecast</h4>
+                    <p class="author-article">By Meteorologist Jeff Haby.</p><br/>
+                    <p> There are several reasons why weather forecasts are important. They would certainly be missed if they were not there. It is a product of science that impacts the lives of many people. The following is a list of various reasons why weather forecasts are important:<br/><br/>
+                        1. Helps people prepare for how to dress (i.e. warm weather, cold weather, windy weather, rainy weather)<br/><br/>
+                        2. Helps businesses and people plan for power production and how much power to use (i.e. power companies, where to set thermostat)<br/><br/>
+                        3. Helps people prepare if they need to take extra gear to prepare for the weather (i.e. umbrella, rain coat, sun screen)<br/><br/>
+                        4. Helps people plan outdoor activities (i.e. to see if rain/storms/cold weather will impact outdoor event)<br/><br/>
+                        5. Helps curious people to know what sort of weather can be expected (i.e. a snow on the way, severe storms)<br/><br/>
+                        6. Helps businesses plan for transportation hazards that can result from the weather (i.e. fog, snow, ice, storms, clouds as it relates to driving and flying for example)<br/><br/>
+                        7. Helps people with health related issues to plan the day (i.e. allergies, asthma, heat stress)<br/><br/>
+                        8. Helps businesses and people plan for severe weather and other weather hazards (lightning, hail, tornadoes, hurricanes, ice storms)<br/><br/>
+                        9. Helps farmers and gardeners plan for crop irrigation and protection (irrigation scheduling, freeze protection)<br/><br/>
+                        10. Helps people involved with certain activities to know if conditions will be good (i.e. skiing, boating, ballooning)<br/><br/>
+                        11. Helps people know outside weather dangers (i.e. heat index, wind chill, severe weather)<br/><br/>
+                        12. Helps people plan for when to do certain activities that are influenced by weather (i.e. fertilizing, bug spraying, gardening)<br/><br/>
+                        13. Helps people know if they need to leave early for work<br/><br/>
+                        14. Make an uncertain future a little more certain (i.e. knowing changes that will occur in weather).<br/><br/>
+                    </p>
+                </section>
+            </article>
+    
+        </main>
+    <footer>
+        <article class="contact-container">
+            <section class=map-section>
+                <img class="map" src="images/preston-map.JPG" alt="location map" />
+            </section>
+            <section class="contact-information">
+                    <h3 class="contact-tilte">Contact information:</h3>
+                    <p>&#10082; Preston, ID 83263</p>
+                    <p>&#x260E; 909 909 909</p>
+                    <p>&#x2709; info@rainingornot.com</p>
+                    <article class="social-media">
+                        <a href="https://www.facebook.com/"
+                            ><i class="fa fa-facebook fa-2x"></i
+                        ></a>
+                        <a href="https://twitter.com/"
+                            ><i class="fa fa-twitter fa-2x"></i
+                        ></a>
+                        <a href="https://www.pinterest.com/"
+                            ><i class="fa fa-google fa-2x"> </i
+                        ></a>
+                        <a href="https://www.youtube.com/"
+                            ><i class="fa fa-youtube fa-2x"> </i
+                        ></a>
+                    </article>
+                </section>
+        </article>
+        <article class="copy-right">
+            <p>&copy; <span id="year"></span> 2021 | Uday Gali | BYUI Online</p>
+            <p id="currentDate"></p>
+        </article>
+    </footer>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+            const navlist = document.querySelector('.main-nav');
+            console.log(navlist.classList);
+            navlist.classList.toggle('responsive');
+            }
+    </script>
+</body>
+</body>
+</html>

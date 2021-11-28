@@ -1,5 +1,4 @@
 @media only screen and (min-width: 54em) {
-
 	main {
 		padding-left: 15px;
 		padding-right: 15px;
@@ -50,16 +49,66 @@
 	.article section p {
 		font-size: 1.05rem;
 	}
+
+	/* &&&&&&&&&&&&& index page styles &&&&&&&&&&& */
 	
+	.cities-container {
+		margin: 0px 0 -15px 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 0.5rem;
+	}
+	.cities-container section:first-child {
+		grid-column: 2;
+		grid-row: 1;
+	}
+	.cities-container section:last-child {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.cities-container section {
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+		margin: 0;
+		padding: 0;
+		align-items: stretch;
+	}
+	.cities-container section:nth-child(1) div {
+		grid-column: 1;
+	}
+	.home-section {
+		display: block;
+	}
+	.home-section article {
+		padding: 20px;
+		height: 150px;
+	}
+	.cities-container section p:nth-child(2) {
+		font-size: 0.95rem;
+	}
+	.cities-container section p:nth-child(3),
+	p:nth-child(4),
+	p:nth-child(5) {
+		font-size: 1.05rem;
+		margin: 5px 0;
+	}
+	.cities-container section img {
+		box-shadow: none;
+		margin: 0;
+		margin-bottom: 0;
+	}
 
-
-
+	#index-aticle {
+		margin-top: 1rem;
+		padding:.5rem;
+	}
+	
 	/* footer styles  */
 	.contact-container {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		padding: .5rem;
+		padding: 0.5rem;
 	}
 
 	.contact-information {
@@ -76,7 +125,7 @@
 	.social-media {
 		margin-top: 1rem;
 	}
-	
+
 	.social-media > a {
 		display: inline-block;
 		background-color: var(--bg-color-white);
@@ -85,5 +134,4 @@
 		border-radius: 5px;
 		cursor: pointer;
 	}
-	
 }

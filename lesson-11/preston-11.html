@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Soda-Springs</title>
+		<script
+			src="https://kit.fontawesome.com/b7f4128615.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="css/small.css" />
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/large.css" />
+		<script src="js/main.js" defer></script>
+		<script src="js/API.js"></script>
+	</head>
+	<body>
+		<header class="main-header">
+			<section class="header-image">
+				<img src="images/DailyWind-logo25.png" alt="dailywind logo" />
+			</section>
+			<section class="header-burger" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</section>
+		</header>
+		<nav>
+			<ul class="main-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="preston-11.html" class="active">Preston</a></li>
+				<li><a href="soda-springs.html">Soda Springs</a></li>
+				<li><a href="fish-haven.html">Fish Haven</a></li>
+				<li><a href="stormcenter.html">Storm Center</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<h2 id="main-heading">Preston Idaho</h2>
+			<section class="hero-image-container">
+				<img src="images/preston.jpg" alt="Preston Hero Image" />
+				<article class="weather-summery">
+					<section>
+						<h4>Weather Summary</h4>
+						<p>Current: <span id="current"></span></p>
+						<p>
+							High: <span><span id="tem"></span>&deg; F</span>
+						</p>
+						<p>wind chill: <span id="wc"></span></p>
+						<p>
+							Humidity: <span><span id="humidity"></span>%</span>
+						</p>
+						<p>
+							Wind speed: <span><span id="ws"></span> mph.</span>
+						</p>
+					</section>
+				</article>
+			</section>
+			<h3 class="week-forecast-heading">5 Day forecast</h3>
+			<article class="forecast"></article>
+			<article class="city-events"></article>
+			<article class="article"></article>
+			
+			<article class="article">
+				<section>
+					<img src="images/person-building.jpg" alt="preston article image" />
+					<h4>Devastating climate disasters of summer 2021</h4>
+					<p class="author-article">By Rachel Ramirez, CNN</p>
+					<br />
+					<p>
+						The climate crisis ravaged the United States this summer. As the
+						West struggled with unrelenting drought and dozens of wildfires, a
+						deadly heat wave seared the Northwest in June. Months later,
+						back-to-back hurricanes - Henri and Ida - slammed the Northeast,
+						breaking all-time rainfall records.<br /><br />
+						Beyond the US, China and Germany experienced deadly flooding events
+						in July, as Canada and southern Europe battled pernicious wildfires
+						of their own. Meanwhile, precipitation at the summit of Greenland
+						fell as rain and not snow for the first time on record.<br /><br />
+						"It was impossible to ignore climate change this summer," Rachel
+						Licker, a senior climate scientist with the Union of Concerned
+						Scientists, told CNN. "And unfortunately, this isn't a one-time
+						thing ... this is what we can expect more of, especially if we don't
+						get off fossil fuels and invest in measures to build our resilience
+						as soon as possible."<br /><br />
+						After months of deadly extremes, Americans' feelings on the climate
+						crisis has evolved dramatically. For the first time, a majority of
+						Americans now believe that the US is facing the consequences of a
+						warming world, according to a new poll from the Yale Program on
+						Climate Change Communication.<br /><br />
+					</p>
+				</section>
+			</article>
+		</main>
+		<footer>
+			<article class="contact-container">
+				<section class="map-section">
+					<img class="map" src="images/preston-map.JPG" alt="location map" />
+				</section>
+				<section class="contact-information">
+					<h3 class="contact-tilte">Contact information:</h3>
+					<p>&#10082; Preston, ID 83263</p>
+					<p>&#x260E; 909 909 909</p>
+					<p>&#x2709; info@rainingornot.com</p>
+					<article class="social-media">
+						<a href="https://www.facebook.com/"
+							><i class="fa fa-facebook fa-2x"></i
+						></a>
+						<a href="https://twitter.com/"
+							><i class="fa fa-twitter fa-2x"></i
+						></a>
+						<a href="https://www.pinterest.com/"
+							><i class="fa fa-google fa-2x"> </i
+						></a>
+						<a href="https://www.youtube.com/"
+							><i class="fa fa-youtube fa-2x"> </i
+						></a>
+					</article>
+				</section>
+			</article>
+			<article class="copy-right">
+				<p>&copy; <span id="year"></span> 2021 | Uday Gali | BYUI Online</p>
+				<p id="currentDate"></p>
+			</article>
+		</footer>
+		<script>
+			function myFunction(x) {
+				x.classList.toggle('change');
+				const navlist = document.querySelector('.main-nav');
+				console.log(navlist.classList);
+				navlist.classList.toggle('responsive');
+			}
+		</script>
+	</body>
+</html>

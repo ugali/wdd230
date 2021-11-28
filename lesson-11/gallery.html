@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily wind</title>
+    <script src="https://kit.fontawesome.com/b7f4128615.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/small.css" />
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/large.css" />
+        <link rel="stylesheet" href="css/prophets.css" />
+		<script src="js/prophets.js" defer></script>
+        <script src="js/lastvisit.js" defer></script>
+
+</head>
+    <body>
+        <header	 class="main-header">
+            <section class="header-image">
+                <img src="images/DailyWind-logo25.png" alt="dailywind logo" />	
+            </section>
+            <section class="header-burger" onclick="myFunction(this)"">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+            </section>
+        </header>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston-11.html" >Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Weather Gallery</h1>
+            <p id="last-visited"></p>
+            <div class="gallery-container">
+                <section class="card">
+                    <img src='images/weatherpic-1.jpg' data-src='images/gallery1.jpg' alt='clounds image'>
+                    <p>Beautiful coulds in the sky.</p>
+                </section>
+                <section class="card">
+                    <img src='images/weatherpic-2-lightening.jpg' data-src='images/gallery2.jpg' alt='Lightning image'>
+                    <p>Dark clouds with Lightning.</p>
+                </section>
+                <section class="card">
+                    <img src='images/weatherpic-3-pleasent.jpg' data-src='images/gallery3.jpg' alt='Beautiful weather'>
+                    <p>Beautiful weather with bright sky</p>
+                </section>
+                <section class="card">
+                    <img src='images/weatherpic-3-stromclouds.jpg' data-src='images/gallery4.jpg' alt='storm clouds'>
+                    <p>Stormy day!</p>
+                </section>
+                <section class="card">
+                    <img src='images/weatherpic-4-windonfarm.jpg' data-src='images/gallery5.jpg' alt='wind blowing'>
+                    <p>Wind blowing on the form.</p>
+                </section>
+                <section class="card">
+                    <img src='images/weatherpic-5-sunnyday.jpg' data-src='images/gallery6.jpg' alt='sunny day'>
+                    <p>Beautiful sunny day with flowers.</p>
+                </section>
+                <section class="card">
+                    <img src='images/weatherpic-6-foodgrains.jpg' data-src='images/gallery7.jpg' alt='foodgrains'>
+                    <p>Foods grains.</p>
+                </section>
+                <section class="card">
+                    <img src='images/weatherpic-7-twister.jpg' data-src='images/gallery8.jpg' alt='snowday'>
+                    <p>Snow is deep and wind is chill.</p>
+                </section>
+                <section class="card">
+                    <img src='images/weatherpic-8-snowday.jpg' data-src='images/gallery9.jpg' alt='darkclouds'>
+                    <p>Very darkclouds! it is about to rain.</p>
+                </section>
+                
+            </div>
+
+        </main>
+    <footer>
+        <article class="contact-container">
+            <section class=map-section>
+                <img class="map" src="images/preston-map.JPG" alt="location map" />
+            </section>
+            <section class="contact-information">
+                    <h3 class="contact-tilte">Contact information:</h3>
+                    <p>&#10082; Preston, ID 83263</p>
+                    <p>&#x260E; 909 909 909</p>
+                    <p>&#x2709; info@rainingornot.com</p>
+                    <article class="social-media">
+                        <a href="https://www.facebook.com/"
+                            ><i class="fa fa-facebook fa-2x"></i
+                        ></a>
+                        <a href="https://twitter.com/"
+                            ><i class="fa fa-twitter fa-2x"></i
+                        ></a>
+                        <a href="https://www.pinterest.com/"
+                            ><i class="fa fa-google fa-2x"> </i
+                        ></a>
+                        <a href="https://www.youtube.com/"
+                            ><i class="fa fa-youtube fa-2x"> </i
+                        ></a>
+                    </article>
+                </section>
+        </article>
+        <article class="copy-right">
+            <p>&copy; <span id="year"></span> 2021 | Uday Gali | BYUI Online</p>
+            <p id="currentDate"></p>
+        </article>
+    </footer>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+            const navlist = document.querySelector('.main-nav');
+            console.log(navlist.classList);
+            navlist.classList.toggle('responsive');
+            }
+    </script>
+</body>
+</html>
