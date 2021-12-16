@@ -1,0 +1,9 @@
+{
+    "editor.wordWrap": "on",
+    "diffEditor.wordWrap": "on",
+    "editor.wordWrapColumn": 200,
+    "html.format.wrapLineLength": 500,
+    "editor.wrappingIndent": "none",
+    "prettier.proseWrap": "never",
+    "html.format.wrapAttributesIndentSize": 2
+}
